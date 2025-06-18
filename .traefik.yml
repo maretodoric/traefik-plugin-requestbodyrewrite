@@ -1,7 +1,7 @@
 displayName: Request Body Rewrite
 summary: Middleware with ability to replace request body with with regex
 type: middleware
-import: github.com/mtodoric/traefik-plugin-requestbodyrewrite
+import: github.com/maretodoric/traefik-plugin-requestbodyrewrite
 
 testData:
   methods:
