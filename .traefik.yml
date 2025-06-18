@@ -4,8 +4,11 @@ type: middleware
 import: github.com/maretodoric/traefik-plugin-requestbodyrewrite
 
 testData:
-  methods:
-    - PUT
   rewrites:
     - regex: foo
       replacement: bar
+      methods:
+        - POST
+      contentTypes:
+        - application/json
+      pathRegex: "confluence"
